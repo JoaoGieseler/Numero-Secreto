@@ -15,7 +15,6 @@ while (chute != numeroSecreto) {
     if (chute == numeroSecreto) {
         break;
     } else {
-        alert("Errou :(");
         if(chute > numeroSecreto) {
             alert(`O número secreto é menor que: ${chute}`);
         } else {
