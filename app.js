@@ -6,12 +6,10 @@ let numeroSecreto = parseInt(Math.random() * numeroMaximo + 1);
 console.log ("Número Secreto: ", numeroSecreto);
 let tentativas = 1;
 
-//(while) ENQUANTO o chute for DIFERENTE do numero secreto, repita isso:
 while (chute != numeroSecreto) {
     chute = prompt(`Escolha um número entre 1 e ${numeroMaximo}`);
     console.log("Valor do chute: ", chute);
 
-//(if / else) SE o chute for IGUAL ao número secreto, faça isso:
     if (chute == numeroSecreto) {
         break;
     } else {
@@ -20,7 +18,6 @@ while (chute != numeroSecreto) {
         } else {
             alert(`O número secreto é maior que: ${chute}`);
         }  
-        //tentativas = tentativas + 1 (incrementação)
         tentativas++;
     }  
 } 
