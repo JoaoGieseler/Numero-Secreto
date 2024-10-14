@@ -106,3 +106,42 @@ button {
     font-size: 32px;
     font-weight: 400;
 }
+
+button:disabled {
+    background-color: gray;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #30475E;
+}
+
+@media screen and (max-width: 1250px) {
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .container__botao {
+        font-size: 16px;
+    }
+
+
+    .texto__paragrafo {
+        font-size: 24px;
+    }
+
+    .container__imagem-pessoa {
+        display: none;
+    }
+
+    .container__conteudo {
+        display: block;
+        position: inherit;
+    }
+
+    .container__informacoes {
+        padding: 1rem
+    }
+}
